@@ -8,16 +8,14 @@
 </head>
 <body class="theme-dark">
     <header class="flex row">
-        <H1>TODO</H1>
-        <div class="theme block">
+        <h1>TODO</h1>
+        <div class=" flex theme ">
             <label for="theme"></label>
             <input type="checkbox" name="theme" id="theme">
+            <input type="text" placeholder="create a new todo..." name="addItem" id="addItem">
+           
         </div>
     </header>
-    <div class="add-new-item flex-row">
-            <span></span>
-            <input type="text" placeholder="create a new todo..." name="addItem" id="addItem">
-    </div>
     <section class="content">
         <ul>
             <li class="flex">
@@ -45,13 +43,28 @@
                 <label for="item"><span>Complete Todo App for Frontend Mentor</span>
                 </label>
              </li>
- 
- 
-         </ul>
-
+        </ul>
     </section>
-
-    
-    
+    <div class="flex items-center">
+        <div class="items-left"><span>5</span> items left</div>
+        <div class="flex">
+            <label>
+                <input type="radio" name="filter" id="All" checked>
+                <span>All</span> 
+            </label>
+            <label>
+                <input type="radio" name="filter" id="active">
+                <span>Active</span>
+            </label>
+            <label>
+                <input type="radio" name="filter" id="completed">
+                <span>Completed</span>
+            </label>
+            <label>
+                <input type="radio" name="filter" id="clear-completed">
+                <span>Clear Completed</span>
+            </label>
+        </div>
+    </div>
 </body>
 </html>
